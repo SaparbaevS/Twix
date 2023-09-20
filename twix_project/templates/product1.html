@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Product</h1>
+    <div>
+        {% for products1 in product1 %}
+            <p>{{ products1.title }}</p>
+            <p>{{ products1.price }}</p>
+            <p>
+                <a href="{{ products1.get_absolute_url }}">Pereyti</a>
+            </p>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
